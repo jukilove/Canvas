@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6E779DD8208ACF7E005FE9F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E779DD7208ACF7E005FE9F1 /* AppDelegate.swift */; };
-		6E779DDA208ACF7E005FE9F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E779DD9208ACF7E005FE9F1 /* ViewController.swift */; };
 		6E779DDD208ACF7E005FE9F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E779DDB208ACF7E005FE9F1 /* Main.storyboard */; };
 		6E779DDF208ACF7E005FE9F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E779DDE208ACF7E005FE9F1 /* Assets.xcassets */; };
 		6E779DE2208ACF7E005FE9F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E779DE0208ACF7E005FE9F1 /* LaunchScreen.storyboard */; };
 		6E779DED208ACF7E005FE9F1 /* CanvasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E779DEC208ACF7E005FE9F1 /* CanvasTests.swift */; };
 		6E779DF8208ACF7E005FE9F1 /* CanvasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E779DF7208ACF7E005FE9F1 /* CanvasUITests.swift */; };
+		6E779E06208AD186005FE9F1 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E779E05208AD186005FE9F1 /* CanvasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		6E779DD4208ACF7E005FE9F1 /* Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E779DD7208ACF7E005FE9F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E779DD9208ACF7E005FE9F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E779DDC208ACF7E005FE9F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E779DDE208ACF7E005FE9F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E779DE1208ACF7E005FE9F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		6E779DF3208ACF7E005FE9F1 /* CanvasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E779DF7208ACF7E005FE9F1 /* CanvasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasUITests.swift; sourceTree = "<group>"; };
 		6E779DF9208ACF7E005FE9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E779E05208AD186005FE9F1 /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				6E779DD7208ACF7E005FE9F1 /* AppDelegate.swift */,
-				6E779DD9208ACF7E005FE9F1 /* ViewController.swift */,
+				6E779E05208AD186005FE9F1 /* CanvasViewController.swift */,
 				6E779DDB208ACF7E005FE9F1 /* Main.storyboard */,
 				6E779DDE208ACF7E005FE9F1 /* Assets.xcassets */,
 				6E779DE0208ACF7E005FE9F1 /* LaunchScreen.storyboard */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E779DDA208ACF7E005FE9F1 /* ViewController.swift in Sources */,
+				6E779E06208AD186005FE9F1 /* CanvasViewController.swift in Sources */,
 				6E779DD8208ACF7E005FE9F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +432,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.elizabeth.Canvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,7 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.elizabeth.Canvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
